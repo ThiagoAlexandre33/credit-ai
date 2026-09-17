@@ -1,0 +1,52 @@
+# Cache e arquivos compilados do Python
+__pycache__/
+*.py[cod]
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Testes e cobertura
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Distribuição e empacotamento
+build/
+dist/
+*.egg-info/
+
+# Configurações locais e segredos
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Bancos de dados locais SQLite
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Editores e sistema operacional
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Relatórios locais de avaliação
+evaluation/results/
+
+# Relatórios de simulações gerados localmente
+reports/*
+!reports/.gitkeep
+
+# Pesos STT locais (recriados por python -m voice.speech_to_text --preparar)
+voice/models/
